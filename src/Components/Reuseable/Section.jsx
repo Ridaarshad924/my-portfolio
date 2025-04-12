@@ -1,0 +1,26 @@
+import React from 'react'
+import Style from './Section.module.css'
+import Profile from '../../assets/Images/Profile.jpg'
+
+const Section = () => {
+    return (
+        <> 
+            <div className={Style.section}>
+                <div className={Style.content}>
+                    <h1>Hi I am Rida</h1>
+                    <h4>I am React Js And Mern Stack Developer</h4>
+                    <p>Developed responsive user interfaces using React.js, HTML, CSS, and JavaScript,
+                        ensuring a seamless user experience. Optimized front-end performance by building
+                        reusable components and testing application functionality across platforms.
+                        Debugged React components and upheld high-quality code standards to meet project
+                        goals efficiently.</p>
+                </div>
+                <div className={Style.image}>
+                    <img src={Profile} alt=""/>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Section
