@@ -7,6 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import CallIcon from '@mui/icons-material/Call';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   const [data, setData] = useState({ Name: "", number: "", message: "" })
@@ -26,6 +27,15 @@ const Contact = () => {
     }
     console.log(data);
     setError("")
+    Swal.fire({
+      title: 'Success!',
+      text: 'Form submitted successfully!',
+      icon: 'success',
+      // confirmButtonText: 'OK',
+      showConfirmButton: false,
+      position: 'center',
+      timer: 2000,
+    });
   }
   return (
     <>
@@ -35,18 +45,18 @@ const Contact = () => {
         <Input id="outlined-basic" type="number" name="number" label="Enter Your Number" onChange={updateValue} />
         <Input id="outlined-basid" type="text" name="message" label="Enter Your Message" onChange={updateValue} multiline rows={5} />
         {error && <div className="errormsg">{error}</div>}
-        <Buttoncomp onClick={handleSubmit} buttonValue="Send Message" />
+        <Buttoncomp onClick={handleSubmit} buttonValue="Submit Form" />
         <div className="socialicons">
-          <a href="" target='blank'>
+          <a href="https://www.facebook.com/share/1A7AfdNZsm/" target='blank'>
             <FacebookIcon />
           </a>
-          <a href="" target='blank'>
+          <a href="https://www.instagram.com/ridaarshad78?igsh=MTdzYmtzZ3k4M29zOA==" target='blank'>
             <InstagramIcon />
           </a>
-          <a href="" target='blank'>
+          <a href="tel:+923482236028" target='blank'>
             <CallIcon />
           </a>
-          <a href="" target='blank'>
+          <a href="https://www.linkedin.com/in/rida-arshad-7075bb21a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'>
             <LinkedInIcon />
           </a>
         </div>

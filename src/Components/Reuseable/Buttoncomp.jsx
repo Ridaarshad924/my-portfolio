@@ -5,7 +5,7 @@ const Buttoncomp = ({ buttonValue, ...props }) => {
   return (
     <>
       <div style={{ textAlign: "center" , padding: "15px 0px"}}>
-        <Button variant="outlined" sx={{borderColor:"goldenrod", color:"goldenrod"}} {...props}>{buttonValue}</Button>
+        <Button variant="filled" sx={{backgroundColor:"goldenrod", color:"black", padding:"12px", borderRadius:"30px"}} {...props}>{buttonValue}</Button>
       </div>
     </>
   )

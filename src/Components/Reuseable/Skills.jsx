@@ -28,7 +28,7 @@ const Skills = () => {
                     </div>
                     <div className={Style.skill}></div>
                     <div style={{ display: "flex", justifyContent: "space-between", padding: "20px" }}>
-                        <h4>Expree JS</h4>
+                        <h4>Express JS</h4>
                         <span>95%</span>
                     </div>
                     <div className={Style.skillexpress}></div>
