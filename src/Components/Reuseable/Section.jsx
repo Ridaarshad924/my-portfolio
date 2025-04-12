@@ -1,10 +1,11 @@
 import React from 'react'
 import Style from './Section.module.css'
 import Profile from '../../assets/Images/Profile.jpg'
+import { Button } from 'react-bootstrap'
 
 const Section = () => {
     return (
-        <> 
+        <>
             <div className={Style.section}>
                 <div className={Style.content}>
                     <h1>Hi I am Rida</h1>
@@ -14,9 +15,13 @@ const Section = () => {
                         reusable components and testing application functionality across platforms.
                         Debugged React components and upheld high-quality code standards to meet project
                         goals efficiently.</p>
+                    <div className={Style.herobuttons}>
+                        <Button onClick={() => window.location.href = '/project'} >View Projects</Button>
+                        <Button onClick={() => window.location.href = '/contact'} >Contact Me</Button>
+                    </div>
                 </div>
                 <div className={Style.image}>
-                    <img src={Profile} alt=""/>
+                    <img src={Profile} alt="" />
                 </div>
             </div>
         </>
