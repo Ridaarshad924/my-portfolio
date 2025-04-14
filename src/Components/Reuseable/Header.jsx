@@ -25,7 +25,7 @@ const Header = () => {
             <div className={header.navbar}>
               <NavLink to="/" className={({ isActive }) => { return isActive ? header.active : header.noactive }}>Home</NavLink>
               <NavLink to="/about" className={({ isActive }) => { return isActive ? header.active : header.noactive }}>About</NavLink>
-              {/* <NavLink to="/project" className={({ isActive }) => { return isActive ? header.active : header.noactive }}>Projects</NavLink> */}
+              <NavLink to="/project" className={({ isActive }) => { return isActive ? header.active : header.noactive }}>Projects</NavLink>
               <NavLink to="/contact" className={({ isActive }) => { return isActive ? header.active : header.noactive }}>Contact</NavLink>
             </div>
             <IconButton
@@ -53,7 +53,7 @@ const Header = () => {
         <div className={header.drawer}>
           <NavLink to="/" className={({ isActive }) => (isActive ? header.active : header.noactive)} onClick={toggleDrawer}>Home</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? header.active : header.noactive)} onClick={toggleDrawer}>About</NavLink>
-          {/* <NavLink to="/project" className={({ isActive }) => (isActive ? header.active : header.noactive)} onClick={toggleDrawer}>Projects</NavLink> */}
+          <NavLink to="/project" className={({ isActive }) => (isActive ? header.active : header.noactive)} onClick={toggleDrawer}>Projects</NavLink>
           <NavLink to="/contact" className={({ isActive }) => (isActive ? header.active : header.noactive)} onClick={toggleDrawer}>Contact</NavLink>
         </div>
       </Drawer>
