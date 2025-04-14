@@ -25,6 +25,10 @@ const Contact = () => {
       setError("All fields are required!");
       return;
     }
+    if (data.number.length !== 11) {
+      setError("Phone number must be exactly 11 digits!");
+      return;
+    }
     console.log(data);
     setError("")
     Swal.fire({
